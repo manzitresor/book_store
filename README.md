@@ -23,7 +23,7 @@
 
 # 📖 Book Store <a name="about-project"></a>
 
-"Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, I'm learning how to manage data using React js.
+"Book Store" is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, I'm learning how to manage data using React js.
 
 ## 🛠 Built With <a name="built-with"></a>
 
