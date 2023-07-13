@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Book from './Book';
 
 function Books() {
   const [books] = useState([
@@ -24,7 +25,7 @@ function Books() {
       {
         books.map((book) => (
           <>
-            <li>{book.title}</li>
+            <Book book={book} />
           </>
         ))
     }
