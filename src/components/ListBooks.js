@@ -1,24 +1,9 @@
-import React, { useState } from 'react';
+/* eslint-disable import/no-extraneous-dependencies */
+import React from 'react';
+import { PropTypes } from 'prop-types';
 import Book from './Book';
 
-function Books() {
-  const [books] = useState([
-    {
-      id: 1,
-      title: 'the hunger games',
-      author: 'suzanne collins',
-    },
-    {
-      id: 2,
-      title: 'Dune',
-      author: 'Frank Herbert',
-    },
-    {
-      id: 3,
-      title: 'capital in the twenty-first century',
-      author: 'suzanne collins',
-    },
-  ]);
+function Books({ books }) {
   return (
     <>
 
@@ -35,3 +20,13 @@ function Books() {
 }
 
 export default Books;
+
+Books.propTypes = {
+  books: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      author: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
+    }),
+  ).isRequired,
+};
