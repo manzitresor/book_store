@@ -1,5 +1,10 @@
 
 <a name="readme-top"></a>
+<div align="center">
+
+  <h3><b>Book Store </b></h3>
+
+</div>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -36,6 +41,11 @@
 ### Key Features <a name="key-features"></a>
 - Add New Book
 - Remove Any Book
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Live Demo <a name="live-demo"></a>
+ [Live Demo Link:](https://github.com/manzitresor/book_store.git)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,6 +112,19 @@ Run this project with:
 - GitHub: [@githubhandle](https://github.com/manzitresor)
 - Twitter: [@githubhandle](https://twitter.com/MANZITresor3)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/manzi-tresor-783b4022a/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> Features to be added in this project include.
+
+- Add Event handler that adds a book to the books array
+- Add Event handler hat removes a book from the books array
+- Display books on page
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
