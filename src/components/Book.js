@@ -1,17 +1,14 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/booksSlice';
+import RemoveBookBtn from './RemoveBookBtn';
 
 function Book({ book }) {
-  const dispatch = useDispatch();
   return (
     <>
       <li key={book.item_id}>
         {book.title}
         <span>{book.author}</span>
-        <button type="submit" onClick={() => dispatch(removeBook(book.item_id))}>Delete</button>
+        <RemoveBookBtn itemId={book.item_id} />
         <span>{book.item_id}</span>
       </li>
     </>
