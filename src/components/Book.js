@@ -10,6 +10,7 @@ function Book({ book }) {
           {book.title}
           <span>{book.author}</span>
           <button type="submit">Delete</button>
+          <span>{book.item_id}</span>
         </li>
       </ul>
     </>
@@ -22,6 +23,6 @@ Book.propTypes = {
   book: PropTypes.shape({
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired,
+    item_id: PropTypes.number.isRequired,
   }).isRequired,
 };
