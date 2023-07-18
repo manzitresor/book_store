@@ -18,7 +18,7 @@ function AddBook() {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(addBook({
-      title, author, category: 'Fiction', item_id: `item-${length}`,
+      title, author, category: 'Fiction', item_id: `item${length}`,
     }));
   };
 
