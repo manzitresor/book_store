@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addBook } from '../redux/books/booksSlice';
+import AddBookBtn from './AddBookBtn';
 
 function AddBook() {
   const dispatch = useDispatch();
@@ -27,7 +28,7 @@ function AddBook() {
       <form onSubmit={handleSubmit}>
         <input type="text" value={title} placeholder="Book Title" onChange={handletitleChange} />
         <input type="text" value={author} placeholder="author" onChange={handleSelectChange} />
-        <button type="submit">Add book</button>
+        <AddBookBtn />
       </form>
     </>
   );
