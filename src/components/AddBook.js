@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addBook } from '../redux/books/booksSlice';
+import { addNewBook } from '../redux/books/booksSlice';
 import AddBookBtn from './AddBookBtn';
 
 function AddBook() {
@@ -18,7 +18,7 @@ function AddBook() {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addBook({
+    dispatch(addNewBook({
       title, author, category: 'Fiction', item_id: `item${length}`,
     }));
   };
