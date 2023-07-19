@@ -19,13 +19,18 @@ export const addNewBook = createAsyncThunk('books/addBook', async ({
   category,
   item_id: itemId,
 }, thunkAPI) => {
-  const data = {
+  const newbook = {
     title,
     author,
     category,
     item_id: itemId,
   };
-  await axios.post(url, data);
+  await axios.post(url, newbook);
+  thunkAPI.dispatch(fetchBooks());
+});
+
+export const removeBook = createAsyncThunk('books/removeBook', async (itemId, thunkAPI) => {
+  await axios.delete(url.concat('/') + itemId);
   thunkAPI.dispatch(fetchBooks());
 });
 
@@ -58,7 +63,5 @@ const bookSlice = createSlice({
     });
   },
 });
-
-export const { addBook, removeBook } = bookSlice.actions;
 
 export default bookSlice.reducer;

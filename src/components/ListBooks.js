@@ -29,7 +29,7 @@ function Books() {
       Object.entries(bookItems).map(([itemId, books]) => (
         <div key={itemId}>
           {books.map((book) => (
-            <Book key={book.itemId} book={book} />
+            <Book key={itemId} book={book} itemId={itemId} />
           ))}
         </div>
       ))
