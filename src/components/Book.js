@@ -5,7 +5,7 @@ import RemoveBookBtn from './RemoveBookBtn';
 function Book({ book }) {
   return (
     <>
-      <li key={book.item_id}>
+      <li>
         {book.title}
         <span>{book.author}</span>
         <RemoveBookBtn itemId={book.item_id} />

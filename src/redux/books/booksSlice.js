@@ -1,26 +1,23 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
-const initialState = [
-  {
-    item_id: 'item1',
-    title: 'The Great Gatsby',
-    author: 'John Smith',
-    category: 'Fiction',
-  },
-  {
-    item_id: 'item2',
-    title: 'Anna Karenina',
-    author: 'Leo Tolstoy',
-    category: 'Fiction',
-  },
-  {
-    item_id: 'item3',
-    title: 'The Selfish Gene',
-    author: 'Richard Dawkins',
-    category: 'Nonfiction',
-  },
-];
+const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/jblkIy8i631oBPjCva0j/books';
+
+export const fetchBooks = createAsyncThunk('books/fetchBooks', async (thunkAPI) => {
+  try {
+    const resp = await axios.get(url);
+    return resp.data;
+  } catch (error) {
+    return thunkAPI.rejectWithValue('ooops smoething wrent wrong');
+  }
+});
+
+const initialState = {
+  bookItems: [],
+  isLoading: false,
+  error: null,
+};
 
 const bookSlice = createSlice({
   name: 'books',
@@ -31,6 +28,19 @@ const bookSlice = createSlice({
       const itemId = action.payload;
       return state.filter((item) => item.item_id !== itemId);
     },
+  },
+  extraReducers: (builder) => {
+    builder.addCase(fetchBooks.pending, (state) => {
+      state.isLoading = true;
+    });
+    builder.addCase(fetchBooks.fulfilled, (state, action) => {
+      state.isLoading = false;
+      state.bookItems = action.payload;
+    });
+    builder.addCase(fetchBooks.rejected, (state, action) => {
+      state.isLoading = false;
+      state.error = action.payload;
+    });
   },
 });
 
