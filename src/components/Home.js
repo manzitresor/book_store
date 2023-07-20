@@ -7,6 +7,7 @@ function Home() {
     <>
       <div className="main-container">
         <Books />
+        <hr className="line-2" />
         <AddBook />
       </div>
     </>

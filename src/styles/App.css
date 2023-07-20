@@ -39,6 +39,12 @@ body{
   padding: 10px;
   font-size: 1.2rem;
 }
+.nav {
+ color: black;
+}
+.nav:nth-child(2) {
+  opacity: 0.5;
+}
 
 .nav-link:hover {
   color: #0290ff;
@@ -68,7 +74,6 @@ body{
 }
 
 .book-container {
-  border: 2px solid red;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -207,4 +212,65 @@ body{
   font-weight: 300;
   text-align: center;
   opacity: 0.8;
+}
+
+.add-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.addbook-heading {
+  color: #888888;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-size: 24px;
+  margin: 1.5rem 0;
+}
+
+.form input {
+  margin: 1.188rem 2.125rem 0 0;
+}
+
+.input-title {
+  padding: 0.375rem 35.688rem 0.563rem 1.063rem;
+  border: solid 1px #e8e8e8;
+  border-radius: 4px;
+}
+
+.input-title:focus {
+  outline: 1px solid #0290ff;
+  border-radius: 3px;
+  border: none;
+}
+
+.input-author {
+  padding: 0.375rem 0.938rem 0.563rem 1rem;
+  text-transform: capitalize;
+  border: solid 1px #e8e8e8;
+  border-radius: 4px;
+}
+
+.input-author:focus {
+  outline: 1px solid #0290ff;
+  border-radius: 3px;
+  border: none;
+}
+
+.add-btn {
+  padding: 0.375rem 0.938rem 0.563rem 1rem;
+  background-color: #0290ff;
+  border: none;
+  color: white;
+}
+
+.add-btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #0290ff;
+  transition: .3s;
+}
+
+.line-2 {
+  border: 1px solid #e8e8e8;
+  margin: 20px 8px;
 }

@@ -17,7 +17,7 @@ function Navbar() {
           <ul className="nav-items">
             {
         navLinks.map((navLink) => (
-          <li key={navLink.text}>
+          <li key={navLink.text} className="nav">
             <Link to={navLink.path} className="nav-link">{navLink.text}</Link>
           </li>
         ))
