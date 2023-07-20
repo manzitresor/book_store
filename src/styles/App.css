@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto+Slab',sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 body{
@@ -17,6 +18,7 @@ body{
   align-items: center;
   height: 4.5rem;
   background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
 }
 .navbar{
   display: flex;
@@ -78,6 +80,8 @@ body{
   background-color: #fff;
   height: 9rem;
   display: flex;
+  align-items: center;
+  gap: 15%;
 }
 
 .book-descr {
@@ -133,6 +137,10 @@ body{
   color: #5bb8ff;
 }
 
+.main-completed {
+  display: flex;
+}
+
 .oval {
   width: 40px;
   height: 40px;
@@ -147,9 +155,56 @@ body{
   font-size: normal;
 }
 
+.comp-container h4 {
+  font-family:'Roboto+Slab',sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+}
+
 
 .complited {
   color: black;
   opacity: 0.5;
   font-size: 15px;
+}
+
+.line {
+  position: absolute;
+  height: 4.375rem;
+  border-left: 2px solid #e8e8e8;
+  margin-right: 20px;
+}
+
+.chapter-container {
+  margin-left: 40px;
+}
+
+.current {
+  font-size: 0.813rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.chapter {
+  font-family:'Roboto+Slab',sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: -0.4px;
+  text-transform: capitalize;
+  margin: 4px auto;
+}
+
+.update {
+  background-color: #0290ff;
+  border-radius: 3px;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+}
+
+.update-content {
+  color: white;
+  font-size: 0.813rem;
+  font-weight: 300;
+  text-align: center;
+  opacity: 0.8;
 }
