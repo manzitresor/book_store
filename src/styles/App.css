@@ -17,10 +17,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 20px;
-  height: 4.8rem;
+  height: 4.5rem;
   background-color: #fff;
   font-family: 'Montserrat', sans-serif;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .navbar {
@@ -91,8 +91,8 @@ body {
   background-color: #fff;
   height: 9rem;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 7%;
 }
 
 .book-descr {
@@ -149,10 +149,16 @@ body {
 
 .main-completed {
   display: flex;
+  position: absolute;
+  margin: 5% 40%;
 }
 
 .oval {
-  width: 10%;
+  width: 30%;
+}
+
+.complited-container {
+  margin-right: 40px;
 }
 
 .comp-container {

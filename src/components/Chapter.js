@@ -4,7 +4,7 @@ import React from 'react';
 function Chapter() {
   return (
     <>
-      <div>
+      <div className="complited-container">
         <span className="line" />
         <div className="chapter-container">
           <h2 className="current">current chapter</h2>

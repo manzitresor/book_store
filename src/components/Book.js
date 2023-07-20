@@ -8,19 +8,21 @@ function Book({ book, itemId }) {
   return (
     <>
       <div className="book">
-        <div className="book-descr">
-          <p className="action">{book.category}</p>
-          <h4 className="book-title">{book.title}</h4>
-          <span className="book-author">{book.author}</span>
-          <ul className="comment-container">
-            <li>comments</li>
-            |
-            <RemoveBookBtn itemId={itemId} />
-            |
-            <li>edit</li>
-          </ul>
+        <div className="book-container">
+          <div className="book-descr">
+            <p className="action">{book.category}</p>
+            <h4 className="book-title">{book.title}</h4>
+            <span className="book-author">{book.author}</span>
+            <ul className="comment-container">
+              <li>comments</li>
+              |
+              <RemoveBookBtn itemId={itemId} />
+              |
+              <li>edit</li>
+            </ul>
+          </div>
+          <Completed />
         </div>
-        <Completed />
         <Chapter />
       </div>
     </>
