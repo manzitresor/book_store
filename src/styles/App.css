@@ -17,7 +17,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4.5rem;
+  padding-bottom: 20px;
+  height: 4.8rem;
   background-color: #fff;
   font-family: 'Montserrat', sans-serif;
 }
