@@ -1,39 +1,67 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto+Slab',sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #faf9f9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 4.5rem;
+  background-color: #fff;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  margin: auto 4%;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-items{
+  position: absolute;
+  list-style: none;
+  margin: auto 30%;
+  display: flex;
+  align-items: center;
+}
+.nav-link {
+  text-decoration: none;
+  color: #121212;
+  padding: 10px;
+  font-size: 1.2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.nav-link:hover {
+  color: #0290ff;
+  cursor: pointer;
+  transition: .3s;
 }
+
+.logo {
+  font-weight: bold;
+  color: #0290ff;
+  font-stretch: normal;
+}
+
+.user-icon {
+  margin: auto 6%;
+  color: #0290ff;
+  font-size: 2rem;
+}
+
+.user-icon:hover {
+  cursor: pointer;
+  color: #5bb8ff;
+}
+
+.main-container {
+  margin: 5% 6%;
+}
+

@@ -5,12 +5,12 @@ import RemoveBookBtn from './RemoveBookBtn';
 function Book({ book, itemId }) {
   return (
     <>
-      <li>
+      <div className="book">
         {book.title}
         <span>{book.author}</span>
         <RemoveBookBtn itemId={itemId} />
         <span>{itemId}</span>
-      </li>
+      </div>
     </>
   );
 }

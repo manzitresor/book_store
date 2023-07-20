@@ -5,7 +5,7 @@ import AddBook from './AddBook';
 function Home() {
   return (
     <>
-      <div>
+      <div className="main-container">
         <Books />
         <AddBook />
       </div>
