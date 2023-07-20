@@ -6,10 +6,18 @@ function Book({ book, itemId }) {
   return (
     <>
       <div className="book">
-        {book.title}
-        <span>{book.author}</span>
-        <RemoveBookBtn itemId={itemId} />
-        <span>{itemId}</span>
+        <div className="book-descr">
+          <p className="action">{book.category}</p>
+          <h4 className="book-title">{book.title}</h4>
+          <span className="book-author">{book.author}</span>
+          <ul className="comment-container">
+            <li>comments</li>
+            |
+            <RemoveBookBtn itemId={itemId} />
+            |
+            <li>edit</li>
+          </ul>
+        </div>
       </div>
     </>
   );
@@ -21,6 +29,7 @@ Book.propTypes = {
   book: PropTypes.shape({
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
   }).isRequired,
   itemId: PropTypes.string.isRequired,
 };

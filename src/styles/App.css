@@ -65,3 +65,69 @@ body{
   margin: 5% 6%;
 }
 
+.book-container {
+  border: 2px solid red;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.book {
+  border: 1px solid #e8e8e8; 
+  background-color: #fff;
+  height: 9rem;
+}
+
+.book-descr {
+  margin: 25px 6%;
+}
+
+.action {
+  color: #121212;
+  opacity: 0.5;
+  text-transform: capitalize;
+}
+
+.book-title {
+  margin-top: 6px;
+  letter-spacing: -0.2px;
+  font-size: 1rem;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+.book-author {
+  font-weight: 300;
+  color: #4386bf;
+  font-size: 14px;
+}
+
+.comment-container {
+  font-style: none;
+  list-style: none;
+  display: flex;
+  color: #4386bf;
+  margin-top: 1rem;
+  gap: 8px;
+  font-size: 14px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.comment-container li:hover {
+  color: #5bb8ff;
+}
+
+.btn-remove {
+  background-color: #fff;
+  border: none;
+  color: #4386bf;
+  font-size: 14px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.btn-remove:hover {
+  color: #5bb8ff;
+}
