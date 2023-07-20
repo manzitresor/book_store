@@ -1,6 +1,7 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 import RemoveBookBtn from './RemoveBookBtn';
+import Completed from './Completed';
 
 function Book({ book, itemId }) {
   return (
@@ -18,6 +19,7 @@ function Book({ book, itemId }) {
             <li>edit</li>
           </ul>
         </div>
+        <Completed />
       </div>
     </>
   );

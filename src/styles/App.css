@@ -77,6 +77,7 @@ body{
   border: 1px solid #e8e8e8; 
   background-color: #fff;
   height: 9rem;
+  display: flex;
 }
 
 .book-descr {
@@ -130,4 +131,25 @@ body{
 
 .btn-remove:hover {
   color: #5bb8ff;
+}
+
+.oval {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: 
+    radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(#307bbe 75%, rgb(236, 235, 235) 0); 
+}
+
+.comp-container {
+  margin-left: 10px;
+  font-size: normal;
+}
+
+
+.complited {
+  color: black;
+  opacity: 0.5;
+  font-size: 15px;
 }
