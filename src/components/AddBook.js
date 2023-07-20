@@ -20,6 +20,8 @@ function AddBook() {
     dispatch(addNewBook({
       title, author, category: 'Fiction', item_id: `item${Math.floor(Math.random() * 1000)}`,
     }));
+    setTitle('');
+    setAuthor('');
   };
 
   return (

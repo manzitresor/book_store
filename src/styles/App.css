@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
-*{
+
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
 }
 
-body{
+body {
   background-color: #faf9f9;
 }
 
@@ -20,28 +21,32 @@ body{
   background-color: #fff;
   font-family: 'Montserrat', sans-serif;
 }
-.navbar{
+
+.navbar {
   display: flex;
   align-items: center;
   margin: auto 4%;
 }
 
-.nav-items{
+.nav-items {
   position: absolute;
   list-style: none;
   margin: auto 30%;
   display: flex;
   align-items: center;
 }
+
 .nav-link {
   text-decoration: none;
   color: #121212;
   padding: 10px;
   font-size: 1.2rem;
 }
+
 .nav {
- color: black;
+  color: black;
 }
+
 .nav:nth-child(2) {
   opacity: 0.5;
 }
@@ -49,7 +54,7 @@ body{
 .nav-link:hover {
   color: #0290ff;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .logo {
@@ -81,16 +86,16 @@ body{
 }
 
 .book {
-  border: 1px solid #e8e8e8; 
+  border: 1px solid #e8e8e8;
   background-color: #fff;
   height: 9rem;
   display: flex;
   align-items: center;
-  gap: 15%;
+  gap: 7%;
 }
 
 .book-descr {
-  margin: 25px 6%;
+  margin: 25px 3%;
 }
 
 .action {
@@ -114,7 +119,6 @@ body{
 }
 
 .comment-container {
-  font-style: none;
   list-style: none;
   display: flex;
   color: #4386bf;
@@ -147,25 +151,18 @@ body{
 }
 
 .oval {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: 
-    radial-gradient(closest-side, white 79%, transparent 80% 100%),
-    conic-gradient(#307bbe 75%, rgb(236, 235, 235) 0); 
+  width: 10%;
 }
 
 .comp-container {
   margin-left: 10px;
-  font-size: normal;
 }
 
 .comp-container h4 {
-  font-family:'Roboto+Slab',sans-serif;
+  font-family: 'Roboto+Slab', sans-serif;
   font-size: 20px;
   font-weight: normal;
 }
-
 
 .complited {
   color: black;
@@ -175,9 +172,10 @@ body{
 
 .line {
   position: absolute;
-  height: 4.375rem;
+  height: 5rem;
   border-left: 2px solid #e8e8e8;
   margin-right: 20px;
+  margin-top: 10px;
 }
 
 .chapter-container {
@@ -192,7 +190,7 @@ body{
 }
 
 .chapter {
-  font-family:'Roboto+Slab',sans-serif;
+  font-family: 'Roboto+Slab', sans-serif;
   font-size: 1rem;
   font-weight: 300;
   letter-spacing: -0.4px;
@@ -201,6 +199,7 @@ body{
 }
 
 .update {
+  margin: 20px 0;
   background-color: #0290ff;
   border-radius: 3px;
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
@@ -220,9 +219,9 @@ body{
 }
 
 .addbook-heading {
-  color: #888888;
+  color: #888;
   text-transform: uppercase;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   margin: 1.5rem 0;
 }
@@ -267,7 +266,7 @@ body{
   cursor: pointer;
   background-color: white;
   color: #0290ff;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .line-2 {
